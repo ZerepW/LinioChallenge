@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Linio - Backend Challenge</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      (function(){
+        for (var i = 1; i <= 100; i++) {
+          if(multiploTres(i) && multiploCinco(i)){
+            document.write(" Linianos ");
+          }
+          else if(multiploTres(i)){
+            document.write(" Linio ");
+          }
+          else if(multiploCinco(i)){
+            document.write(" IT ");
+          }else{
+            document.write(" "+i+" ");
+          }
+        }
+      })();
+      function multiploTres(numero){
+        if(numero%3 == 0){
+          return true;
+        }else {
+          return false;
+        }
+      };
+      function multiploCinco(numero){
+        if(numero%5 == 0){
+          return true;
+        }else {
+          return false;
+        }
+      };
+    </script>
+  </body>
+</html>
